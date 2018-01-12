@@ -1,0 +1,22 @@
+
+/*問1. 行の高さを30pxに設定したい場合はどのプロパティと値を指定しますか。次から選んでください。
+　　　1. line-height: 30;
+　　　2. line-height: 30px;
+　　　3. row-height: 30;
+　　　4. row-height: 30px;
+
+問2. HTMLにて<section>タグを生成し、CSSで幅300px、高さ300px、太さが2px、種類が直線、色が#fa5893の枠線を指定してください。
+
+問3. 2で作成したsection要素の中に<h>タグを生成し、タグの中に「折り返し地点」という文字を入力してください。
+
+問4. <span>タグを用いて、「折り返し地点」の「地点」だけ文字色を#fa5893に変更してください。*/
+
+.section{
+	width: 300px
+	height: 300px;
+	border: 2px solid #fa5893;
+}
+
+span{
+	color: #fa5893;
+}

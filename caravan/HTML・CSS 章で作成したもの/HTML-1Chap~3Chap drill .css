@@ -1,0 +1,91 @@
+
+/* ブラウザがそれぞれ持っているCSSをリセットするため　*/
+ /* 以下は全てのブラウザにはデフォルトでCSSを持っており、
+ Webページ用に作成したCSSが少なからず影響を受けるのを防ぐためのリセットCSS */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ }
+
+/* clearfixは下記のコードをCSSに記述し、floatされた要素の親要素に
+　　class名として付与する */
+/* clearfixはfloatを解除する為に作成するclass */
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 擬似要素::afterは、::afterの付いたセレクタの要素の直後にスタイルや要素を追加するもの。
+つまり、「わからなくなっている子要素のheight部分に目印をつけます」という指示といった感じ。*/
+/* contentプロパティは、要素の直前または直後に、文字列や画像などのコンテンツを挿入する際に使用.
+   擬似要素::beforeと::afterのみにしか使用することのできないプロパティ*/
+
+
+.header{
+	width: 100%; /* 横幅 */
+	height: 120px; /* 高さ */
+	background-color: red; /* 背景色 */
+}
+.header-top{
+	width: 100%;
+	height: 70px;
+	background-color: hotpink;
+}
+.header-bottom{
+	width: 100%;
+	height: 50px;
+	background-color: pink;
+}
+/* 上記の"header-top"と"header-bottom"は"header"の子要素に当たるため、
+　　widthとheightの合計数値は親要素である"header"の数値を超えてはならない。*/
+
+.main-visual{
+	width: 100%;
+	height: 300px;
+	background-color: orange;
+}
+.main-visual-content{
+	width: 350px;
+	height: 300px; /* 親の高さに揃える */
+	background-color: gold;
+}
+
+
+.main{
+	width: 840px;
+/* height: 1400px; 左記を入力するとWeb上ではGreenが広がっている */
+	background-color: green;
+	/* 中央寄せ（余白がないとできない） */
+	margin: 0 auto;  /* 左記の指定は中央寄せの一般的なCSS要素 */
+	/* margin は余白を調整するためのプロパティ */
+	/* 余白を調整するプロパティとして"padding"がある。詳細は「HTML・CSS 第3章」
+	   の一番下の項目を参照。  */
+	/* margin は border より外側の余白を指す
+　　　　padding は border より内側の余白を指す
+　　　　border と要素の四辺は同一のものではない */
+}
+.blog{
+	width: 600px;
+	height: 1400px;
+	background-color: limegreen;
+	float: left; /* 要素を左揃えで並べる */
+}
+.sidebar{
+	width: 240px;
+	height: 1400px;
+	background-color: palegreen;
+	float: left; /* 要素を左揃えで並べる */
+}
+/* 親：main
+   子⑴：blog
+   子⑵ ：sidebar
+   子2つの横幅が親横幅の数値にぴったし収まるので、
+   Web上で確認すると親要素のGreenは隠れている　*/
+
+
+.footer{
+	width: 100%;
+	height: 120px;
+	background-color: blue;
+}
