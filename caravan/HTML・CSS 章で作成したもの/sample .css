@@ -1,0 +1,55 @@
+
+/* 学習中に出てきたCSSに関するsample例 */
+
+/* 複数を対象としたセレクタの指定の仕方はこれまでのやり方と違うので
+　　注意してください。*/
+/* 例えば、<h1>タグを対象とする場合と、headerクラス内の<h1>タグを
+　　指定する記述では以下のような違いがあります。*/
+
+
+/* ページ内全てのh1に適応される */
+h1 { 
+  font-size: 32px;
+}
+
+
+/* クラス名headerの箱の中にある全てのh1タグに適応される */
+.header h1 {
+  font-size: 32px;
+}
+
+
+/* セレクタの指定に関しては、以下のようにも書くことができます。 */
+
+h1, h2 {
+  /* <h1>タグと<h2>タグの両方をセレクタとする */
+}
+header>h1 {
+  /* <header>タグの直下（子要素）の<h1>タグをセレクタとする */
+}
+h1#header {
+  /* id名がheaderである<h1>タグをセレクタとする */
+}
+
+テキストの行揃え位置を設定するプロパティ
+text-align: center;  /* 中央揃え */
+text-align: Left aligned /* 左揃え */
+text-align: Right aligned /* 右揃え */
+
+
+＊ Background-sizeプロパティ
+    background-size: 値;
+    background-size: 画像の幅 画像の高さ;
+2パターンの使用例は以下の通りです。
+
+sample.css
+/* 元の画像の大きさを維持したまま、背景の表示領域を埋めるまで何度も繰り返すように表示 デフォルト */
+background-size: contain;
+/* 画像の幅と高さの比率は固定されたまま、背景の表示領域を覆うように表示 */
+background-size: cover;
+/* 表示領域の幅100%高さ100%で表示（縦横比は無視） */
+background-size: 100% 100%;
+/* pxを指定して表示 */
+background-size: 24px auto;
+
+

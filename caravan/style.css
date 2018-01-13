@@ -1,0 +1,259 @@
+
+/* ブラウザがそれぞれ持っているCSSをリセットするため*/
+ /* 以下のタグについての詳しい詳細・コメントは…
+    /Users/asa_mk/Desktop/caravan/HTML・CSS 章で作成したもの
+    のフォルダの "HTML-1Chap~3Chap drill.css" を参照 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #6c6b6b;
+ }
+
+a{
+	text-decoration: none;
+}
+
+/* 文字の書体の変更 */
+header, nav, h2, .main-visual, footer{
+	font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+header{
+	position: relative;
+	width: 90%;
+	text-align: center;
+	padding: 15px 0;
+	margin: 0 auto;
+}
+/* headerタグ内のheadlineクラスにのみ反映される*/
+header .headerline{
+	font-size: 32px;
+}
+
+.social{
+	position: absolute;
+	top: 22px;
+	right: 22px;
+}
+
+.social i{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.nav-list{
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+.nav-list-item{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+
+
+.main-visual{
+	width: 100%;
+	height: 300px;
+	background-image: url(http://caravan.web-camp.io/img/mv.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.main-visual-content{
+	width: 40%;
+	height: 300px; /* 親の高さに揃える */
+	background-color: rgba(0,0,0,0.5); /* 背景色を半透明の黒にする */
+	text-align: center; /* 文字を真ん中に寄せる */
+	padding-top: 105px; /* 上側の内側の余白で垂直方向の位置を調整 */
+}
+
+.main-visual-text{
+	color: #fff; /* 文字色を白に変更 */
+}
+.main-visual-name{
+	margin-top: 30px; /* 上側の外側の余白 */
+	color: #fff;
+}
+
+main{
+	width: 800px;
+	margin: 0 auto;
+	padding: 70px 0; /* 上下に70px、左右に0pxの枠の内側の余白 */
+}
+
+.blog{
+	width: 540px;
+	float: left; /* 要素を左揃えで並べる */
+	margin-right: 30px;
+}
+
+.blog-headline{
+	border-bottom: 8px solid #f7f7f7;
+	text-align: center;
+	line-height: 0.6;
+}
+
+.blog-item{
+	width: 561px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.blog-image{
+	height: 180px;
+	float: left;  /* "Recent Blogs"の1枚目の画像と文字を横並びにするプロパティ。こちらは文字の項目なので、画像項目"blog-text"にも同じように付け足す */
+}
+
+.blog-text{
+	float: left; /* "Recent Blogs"の1枚目の画像と文字を横並びにするプロパティ。こちらは文字の項目なので、画像項目"blog-image"にも同じように付け足す */
+	padding: 30px 0 0 25px;
+}
+
+.blog-date{
+	font-size: 12px;
+	display: inline-block; /* 日付のフォントとNatureを横並びにするプロパティ */
+}
+
+.blog-box{
+	padding-top: 50px;
+}
+
+.blog-text-headline{
+	padding: 15px;
+}
+
+.category{
+	display: inline-block;
+	padding: 5px 8px;
+	background-color: #acabab;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 11px;
+}
+
+#pagination{
+	text-align: center;
+	padding-top: 50px;
+}
+
+#pagination p{
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	display: inline-block;
+	color: #ffffff;
+	background-color: #acabab;
+	border-radius: 3px;
+	line-height: 30px;
+}
+
+
+
+.sidebar{
+	width: 230px;
+	float: left; /* 要素を左揃えで並べる */
+}
+
+
+.sidebar-headline, .instagram-headline, .categories-headline {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.sidebar-contents {
+  padding: 50px 0;
+  }
+
+.popular-text, .categories-text {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 5px;
+  }
+
+.popular-text:last-child, .categories-text:last-child {
+	/* コロンで区切られた後の記述、last-childの部分を「擬似クラス」と呼ぶ。
+	　　擬似クラスは、要素が特定の状態にある場合にだけ適応されるcss
+	　　今回の場合、popular-textとcategories-textの中で最後に記述された要素のみに適用するという意味　*/
+  margin: 0;
+  padding: 0;
+  border: none;
+  }
+
+.instagram-box {
+  float: left;
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  }
+
+.instagram-box:nth-child(odd) {
+	/* nth-child(odd) は "instagram-box" のクラスのうち奇数の要素にスタイルを適用 */
+  margin: 0 10px 10px 0;
+  }
+
+.instagram-box:nth-child(1) {
+	/*  nth-child(odd) は "instagram-box" のクラスのうちの一番目の要素にスタイルを適用 */
+  background-image: url(http://caravan.web-camp.io/img/airport.jpg);
+  }
+
+.instagram-box:nth-child(2) {
+  background-image: url(http://caravan.web-camp.io/img/japan.jpg);
+  }
+
+.instagram-box:nth-child(3) {
+  background-image: url(http://caravan.web-camp.io/img/snow.jpg);
+  }
+
+.instagram-box:nth-child(4) {
+  background-image: url(http://caravan.web-camp.io/img/japan2.jpg);
+  }
+
+.instagram-box:nth-child(5) {
+  background-image: url(http://caravan.web-camp.io/img/lake.jpg);
+  }
+
+.instagram-box:nth-child(6) {
+  background-image: url(http://caravan.web-camp.io/img/road.jpg);
+  }
+
+
+
+footer{
+	text-align: center;
+	padding: 50px 0;
+	background-color:  #848282;
+}
+.footer-text{
+	color: #fff;
+}
+
+
+
+@media all and (max-width:768px) {
+.sidebar{
+	float: none;
+}
+.blog-text{
+	float: none;
+}
+.blog-image{
+	float: none;
+}
+}
+
+
+

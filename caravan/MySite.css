@@ -1,0 +1,592 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a{
+	text-decoration: none;
+	color: #fafafa;
+}
+
+/* ヘッダー */
+header{
+	width: 100%;
+	height: 70px;
+	background-color: #EC715F;
+}
+nav{
+	width: 1024px; /*.htmlの<nav>の横幅を設定。WEBを見るとheaderの横幅100％に対して、真ん中寄り1024pxになっている*/
+	height: 70px;
+	margin: 0 auto;
+}
+
+nav img{
+	height: 70px; /*画像の高さ(大きさ)を70px*/
+}
+
+.nav-list{
+	width: 50%; /*上記で設定した nav{ の1024pxを100％と仮定し、半分の50％に納めるようにする*/
+	float: right;
+}
+
+
+/*  ★余白30pxがまだ終わっていない  */
+.nav-list-item{
+	width: 25%; /*上記 .nav-list{ の50％を100％と仮定して、そこから＜html＞に記入した4つのフォントを25％ずつ均等に分ける*/
+	float: left;
+	line-height: 70px; /*行の高さを70pxに設定しておく*/
+	list-style: none;
+	font-size: 16px;
+	color: #fafafa;
+}
+
+/* メイン･ビジュアル */
+.main-visual{
+	height: 650px;
+	background-position: center;
+	background-image: url(img/mv.png);
+	background-size: 100% 100%;
+}
+
+.main-visual-line{
+	font-size: 64px;
+	color: #FAFAFA;
+	padding: 200px 0 0 0;
+	text-align: center;
+}
+
+.main-visual-text{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #fafafa;
+	text-align: center;
+}
+
+
+/* メイン */
+.borders{
+	width: 70px;
+	height: 8px;
+	margin: 0 auto;
+	border-bottom: 3px solid #EC715F;
+}
+
+
+/*  ポートフォリオ  */
+.main{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	padding-bottom: 90px;
+}
+
+.main-portfolio{
+	background-color: #eceff1;
+	width: 920px;
+	margin: 0 auto;
+}
+
+.portfolio-headline{
+	text-align: center;
+	font-size: 32px;
+	color: #000000;
+	padding: 90px 0 0 0;
+}
+
+.portfolio-text-headline{
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.portfolio-picture{
+	margin: 5px 0px;
+	float: left;
+	background-position: center;
+}
+
+
+.portfolio-picture:nth-child(2){
+	width: 300px;
+	height: 250px;
+	background-image: url(img/sketch.jpg);
+	background-size: cover;
+}
+
+.portfolio-picture:nth-child(3){
+	background-image: url(img/websuku.png);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	margin: 5px 10px;
+}
+
+.portfolio-picture:nth-child(4){
+	background-image: url(img/write.jpg);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+}
+
+.portfolio-picture:nth-child(5){
+	background-image: url(img/webcamp.png);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+}
+
+.portfolio-picture:nth-child(6){
+	background-image: url(img/talk.jpg);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	margin: 5px 10px;
+}
+
+.portfolio-picture:nth-child(7){
+	background-image: url(img/webcamp-mother.png);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+}
+
+
+/*  フィーチャー  */
+.main-2{
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.main-feature{
+	background-color: white;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.feature-headline{
+	text-align: center;
+	font-size: 32px;
+	color: #000000;
+	padding: 90px 0 0 0;
+}
+
+.feature-text-headline{
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.social{
+	float: left;
+}
+
+.social i{
+	display: inline-block;
+	height: 0 auto;
+	width: 320px;
+	text-align: center;
+	font-size: 60px;
+}
+
+.feature-strenght-name{
+	font-size: 20px;
+	color: #000000;
+	padding: 10px 0;
+	text-align: center;
+	width: 320px;
+}
+
+.feature-strenght-text{
+	font-size: 16px;
+	color: #000000;
+	width: 320px;
+	text-align: left;
+	margin: 0 5px;
+}
+
+
+
+
+
+
+/*  プロフィール  */
+.main-3{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	padding-bottom: 90px;
+}
+
+.profile-headline{
+	text-align: center;
+	font-size: 32px;
+	color: #000000;
+	padding: 90px 0 0 0;
+}
+
+.main-profile{
+	background-color: #eceff1;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.profile-text-headline{
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+.profile-item{
+	width: 1024px;
+	float: left;
+}
+
+.prof_img_box{
+	width:250px;
+	float: left;
+	margin-left: 125px;
+}
+
+.prof_img_box img{
+	width: 250px;
+	/*すぐ上の".prof_img_box"の"width"の大きさに対して100％の意味。
+	　例えば、全体の幅が100pxの場合、さらに".<class名> img{"で横幅を50％に指定すると、
+	　全体100pxの半分である50pxを100pxとして見なして計算する。ということになる*/
+}
+
+.profile-imag{
+	border-radius: 50%;
+
+}
+
+.profile-item-sec{
+	width: 512px;
+	float: right;
+}
+
+.profile-item-name{
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+}
+
+.profile-item-text{
+	font-size: 16px;
+	color: #000000;
+	margin: 5px 0 8px;
+}
+
+
+
+/*  コンタクト  */
+.main-4{
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.contact-headline{
+	text-align: center;
+	font-size: 32px;
+	color: #000000;
+	padding: 90px 0 0 0;
+}
+
+.main-contact{
+	background-color: white;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.contact-text-headline{
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.contact-item{
+	width: 400px;
+	float: left;
+}
+
+.contact-item-clearfix{
+	width: 400px;
+	float: right;
+	padding-left: 40%;
+}
+
+.contact-item-sec h2{
+	width: 400px;
+	float: left;
+}
+
+.contact-sec-name{
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.contact-sec-text{
+	font-size: 16px;
+	color: #000000;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.contact-item-chap{
+	float: right;
+	width: 400px;
+	padding-left: 70px;
+}
+
+
+
+.contact-item-sec-2{
+	font-size: 20px;
+	color: #000000;
+}
+
+.contact-item-sec-2 h2{
+	width: 400px;
+	float: right;
+	padding-left: 87px;
+	padding-top: 5px;
+}
+
+.social-2{
+	display: inline-block;
+
+}
+
+.social-2 i{
+	font-size: 50px;
+	margin: 0 20px;
+}
+
+
+/* フッター */
+.footer{
+	height: 60px;
+	background-color: #EC715F;
+	text-align: center;
+	line-height: 60px;
+}
+
+.footer-text{
+	color: #fafafa;
+}
+
+
+
+
+@media all and (max-width:767px) {
+* {
+	width: 90%;
+	margin: 0 auto;
+}
+nav{
+	width: 100%;
+	height: 50px;
+}
+header{
+	height: 50px;
+}
+nav img{
+	height: 50px;
+	width: 20%;
+}
+.nav-list-item{
+	line-height: 50px;
+}
+
+.main-visual-line{
+	font-size: 40px;
+	padding: 200px 0 10px 0;
+}
+.main-portfolio{
+	width: 100%;
+}
+.main-visual-text{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.main-visual{
+	width: 100%;
+	background-image: url(img/code.png);
+	height: 750px;
+	background-size: 200%;
+}
+
+.portfolio-picture{
+	margin: 0 auto;
+	float: none;
+
+}
+.portfolio-picture:nth-child(2){
+	width: 100%;
+	height: 0px;
+}
+
+.portfolio-picture:nth-child(3){
+	background-image: url(img/websuku.png);
+	width: 100%;
+	margin: 0 0 3px;
+}
+
+.portfolio-picture:nth-child(4){
+	width: 100%;
+	height: 0px;
+}
+
+.portfolio-picture:nth-child(5){
+	width: 100%;
+	margin: 0 0 3px;
+}
+
+.portfolio-picture:nth-child(6){
+	width: 100%;
+	margin: 0 auto;
+	height: 0px;
+}
+
+.portfolio-picture:nth-child(7){
+	width: 100%;
+	margin: 0 0 3px;
+}
+
+.profile-item-name{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+
+.main-feature{
+	width: 100%;
+}
+.social i{
+	width: 100%;
+	padding-top: 10px;
+}
+
+.feature-strenght-text{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-profile{
+	width: 100%;
+}
+
+.profile-item{
+	width: 100%;
+	float: none;
+}
+.profile-item-text{
+	margin: auto;
+}
+
+.main-contact{
+	width: 100%;
+}
+.contact-item-clearfix{
+	width: 100%;
+	float: none;
+	padding-left: 0%;
+}
+.contact-item{
+	width: 100%;
+}
+.contact-item-sec h2{
+	width: 100%;
+	text-align: center;
+}
+.contact-sec-text{
+	text-align: center;
+}
+.contact-item-sec-2 h2{
+	width: 100%;
+	float: none;
+	padding-left: 0px;
+}
+.contact-item-chap{
+	float: none;
+	width: 100%;
+	padding-left: 0px;
+}
+.contact-sec-name{
+	text-align: center;
+}
+
+
+.social-2{
+	display: table;
+    table-layout: fixed;
+  	text-align: center;
+  	width: 50%;
+}
+
+.social-2 i{
+	font-size: 50px;
+	margin: 0 4px;
+	display: table-cell;
+  	vertical-align: middle;
+}
+
+
+.nav-list {
+    background-color: #EC715F; /*メニュー背景色*/
+    box-sizing: border-box;
+    line-height: 50px;
+    list-style: none;
+    position: fixed;
+    right: -25%; /*メニュー横幅①と合わせる*/
+    top: 0;
+    transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+    width: 25%; /*メニュー横幅①*/
+    z-index: 1000;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+.nav-list li::before {
+    background-color: #EC715F; /*ボタン部分背景色*/
+    border-radius: 0 0 0 10px; /*左下角丸*/
+    color: white; /*アイコン（フォント）色*/
+    content: "≡"; /*メニューアイコン*/
+    display: block;
+    font-size: 50px; /*アイコン（フォント）サイズ*/
+    height: 50px;
+    line-height: 50px; /*縦位置中央化*/
+    position: absolute;
+    right: 140%;
+    text-align: center;
+    top: -3px;
+    width: 50px;
+}
+
+
+
+}
+
+
+
+
+
+
+
