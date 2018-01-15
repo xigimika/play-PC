@@ -46,6 +46,7 @@ nav img{
 	list-style: none;
 	font-size: 16px;
 	color: #fafafa;
+	padding: 0 30px;
 }
 
 /* メイン･ビジュアル */
@@ -264,8 +265,8 @@ nav img{
 .prof_img_box img{
 	width: 250px;
 	/*すぐ上の".prof_img_box"の"width"の大きさに対して100％の意味。
-	　例えば、全体の幅が100pxの場合、さらに".<class名> img{"で横幅を50％に指定すると、
-	　全体100pxの半分である50pxを100pxとして見なして計算する。ということになる*/
+	例えば、全体の幅が100pxの場合、さらに".<class名> img{"で横幅を50％に指定すると、
+	全体100pxの半分である50pxを100pxとして見なして計算する。ということになる*/
 }
 
 .profile-imag{
@@ -281,7 +282,6 @@ nav img{
 .profile-item-name{
 	font-size: 20px;
 	color: #000000;
-	text-align: center;
 }
 
 .profile-item-text{
@@ -365,7 +365,7 @@ nav img{
 .contact-item-sec-2 h2{
 	width: 400px;
 	float: right;
-	padding-left: 87px;
+	padding-left: 80px;
 	padding-top: 5px;
 }
 
@@ -376,7 +376,7 @@ nav img{
 
 .social-2 i{
 	font-size: 50px;
-	margin: 0 20px;
+	padding: 0 10px;
 }
 
 
@@ -430,7 +430,7 @@ nav img{
 	width: 100%;
 	background-image: url(img/code.png);
 	height: 750px;
-	background-size: 200%;
+	background-size: cover;
 }
 
 .portfolio-picture{
@@ -473,6 +473,10 @@ nav img{
 .profile-item-name{
 	margin-top: 20px;
 	margin-bottom: 5px;
+	text-align: center;
+}
+.profile-item-sec{
+	width: 100%;
 }
 
 
@@ -489,6 +493,9 @@ nav img{
 	text-align: center;
 	margin: 0 auto;
 }
+.feature-headline{
+	text-align: center;
+}
 
 .main-profile{
 	width: 100%;
@@ -501,6 +508,12 @@ nav img{
 .profile-item-text{
 	margin: auto;
 }
+
+.prof_img_box{
+	margin-left: auto;
+	float: none;
+}
+
 
 .main-contact{
 	width: 100%;
@@ -574,7 +587,7 @@ nav img{
     height: 50px;
     line-height: 50px; /*縦位置中央化*/
     position: absolute;
-    right: 140%;
+    right: 138%;
     text-align: center;
     top: -3px;
     width: 50px;
