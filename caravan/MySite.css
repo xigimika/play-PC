@@ -397,8 +397,8 @@ nav img{
 
 @media all and (max-width:767px) {
 * {
-	width: 90%;
-	margin: 0 auto;
+	width: 100%;
+	padding: 0 5px;
 }
 nav{
 	width: 100%;
@@ -406,13 +406,14 @@ nav{
 }
 header{
 	height: 50px;
+	position: relative;
 }
 nav img{
 	height: 50px;
 	width: 20%;
 }
 .nav-list-item{
-	line-height: 50px;
+	display: none;
 }
 
 .main-visual-line{
@@ -496,6 +497,9 @@ nav img{
 .feature-headline{
 	text-align: center;
 }
+.feature-strenght-name{
+	width: 100%;
+}
 
 .main-profile{
 	width: 100%;
@@ -507,11 +511,14 @@ nav img{
 }
 .profile-item-text{
 	margin: auto;
+	text-align: center;
 }
 
 .prof_img_box{
-	margin-left: auto;
+	margin: auto;
 	float: none;
+	width: 250px;
+	height: 240px;
 }
 
 
@@ -549,10 +556,10 @@ nav img{
 
 
 .social-2{
-	display: table;
     table-layout: fixed;
-  	text-align: center;
+  	margin: 0 auto;
   	width: 50%;
+  	display: block;
 }
 
 .social-2 i{
@@ -562,37 +569,27 @@ nav img{
   	vertical-align: middle;
 }
 
-
-.nav-list {
-    background-color: #EC715F; /*メニュー背景色*/
-    box-sizing: border-box;
-    line-height: 50px;
-    list-style: none;
-    position: fixed;
-    right: -25%; /*メニュー横幅①と合わせる*/
-    top: 0;
-    transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
-    width: 25%; /*メニュー横幅①*/
-    z-index: 1000;
+#humberger{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  vertical-align: middle;
+  background-color: #EC715F;
+  padding: 6px 0;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  color: #fff;
 }
-
-/*メニューアイコン部分は疑似要素で*/
-.nav-list li::before {
-    background-color: #EC715F; /*ボタン部分背景色*/
-    border-radius: 0 0 0 10px; /*左下角丸*/
-    color: white; /*アイコン（フォント）色*/
-    content: "≡"; /*メニューアイコン*/
-    display: block;
-    font-size: 50px; /*アイコン（フォント）サイズ*/
-    height: 50px;
-    line-height: 50px; /*縦位置中央化*/
-    position: absolute;
-    right: 138%;
-    text-align: center;
-    top: -3px;
-    width: 50px;
+#humberger div {
+  display: inline-block;
+  height: 4px;
+  width: 24px;
+  margin: -27px -1px;
+  font-size: 49px;
 }
-
 
 
 }
